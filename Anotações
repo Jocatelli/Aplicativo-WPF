@@ -1,0 +1,10 @@
+O que é fazer um Binding? 
+Resp: Fazer um Binding é fazer um link com da informação que eu quero ver  da minha VM para a minha view. 
+Em suas palavras, explique o Padrão de Projeto Observer.
+Qual o papel da interface INotifyPropertyChanged? 
+resp: Ela vai notificar a minha view de que o termo que estamos vendo foi alterado. se não notificar ela nao altera e não mostra. mesmo ele tendo sido alterado no codigo/VM
+Qual a diferença entre INotifyPropertyChanged e a INotifyCollectionChanged?
+O que é vazamento de memória?
+resp: é a reserva desnecessaria de memoria ao ir criando itens, ou funçoes que usam memoria. 
+O que é Garbage Collector e como ele funciona? 
+resp: ele vai coletar a memoria que foi reservada e nao ta sendo mais usada pra "reciclar" 
