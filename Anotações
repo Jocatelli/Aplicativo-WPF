@@ -1,3 +1,134 @@
+Ponteiro - não guarda um valor, e sim uma posição, um endereço de memoria. O que facilita para possiveis mudanças. 
+
+Objeto – contem um conjunto de atributos de um tipo(classe), e cada classe tem um conjunto de metodos que definem, por fim, o objeto do qual a classe pertence. Classes não possuem estado. Diferentemente dos objetos.  
+
+Herança - reuso de codigo a partir do que ele tem.  
+
+& endereço  
+
+O * é o que recebe um valor.  
+
+A = endereço  
+
+Se *a recebe valor.  
+
+Polimorfismo muda o metodo de um filho.  
+
+Composição X herança = herança herda todos os atributos, o que pode prejudicar. “prciso de todos?” SEMPRE OPTAR PELA COMPOSIÇAO que da pra mudar algum metodos se preciso.  
+
+ 
+
+Deposito -  
+
+Produto o que é um produto? Classe produto o que abrange a classe produto, como eu construo a minha classe os meus metodos fazem sentido para o que eu preciso?  
+
+Controle de Estoque – Controle de usuarios, cadastro, operaçoes e relatorios e graficos. 
+
+Infraestrutura- tratamento de exceção - log(gravação de log em arquivos) - autenticação e autorização - Auditoria 
+
+, cadastro – grupos de produtos, marcas, localização de armazenamento, unidade de medida, pais- estado – cidade – fornecedor , produtos perfil de usuario e usuarios  
+
+, operaçoes - entrada de produtos - saida de produtos – lancamento de perdas e inventario de estoque  
+
+, relatorios - posição de estoque (quanto eu tenhode cada produto) e ressuprimento (produtos com quantidade baixa)  
+
+e graficos.  
+
+PRODUTO – grupo – marca – fornecedor – unidade de medida – local  -- Nome - Sabor - Quantidade
+
+FORNECEDOR – Cidade – estado – pais  
+
+OPERAÇOES em PRODUTOS – Entrada – Saida – Inventario – Perda  -Add - Remove - Editar
+
+USUARIO – perfil  (englobara tudo que foi dito anteriormente)  
+
+.NET frameword – C# - ASP.NET MVC 5  
+
+
+C sharp - herança .  
+
+ 
+
+Classe – produto  
+
+Atributos: Codigo do produto, sabor, cor, marca, tipo(resfriado ou seco) 
+
+Comportamentos - receberão dados e farao as funçoes desejadas. 
+
+A partir do comando new, é elaborado um novo objeto que utilizará a classe em questão, como modelo para a sua criação, fazendo uso dos seus atributos que, apesar de serem parte da classe, cada objeto terá um atributo diferente. 
+
+Void é uam caracteristica de metodo que não faz retorno. Se o metodo fazer retorno coloca o tipo de variavel retornavel antes da entrada do metodo ex: 
+
+Float Multiplicador(float x, float y) - aqui o metodo multiplicador retornara uma variavel de tipo float.  
+
+Static void Main(string[] args)) 
+
+{ 
+
+Produto produto1 – new Produto(); 
+
+produto1.nome = “Nome01”; 
+
+Produto1.codigo = 1; 
+
+Produto1.sabor = “limão”; 
+
+Produto1.qtd = 6 ; 
+
+Class Produto { 
+
+Public string Nome; 
+
+Public string Sabor; 
+
+Public int Codigo; 
+
+Public int Quantidade; 
+
+1 referencia  
+
+Public string Retorno(); 
+
+{  
+
+Return string.Format($”0 Produto {Nome} de sabor {Sabor}, Codigo: {Codigo} e Quantidade: {Quantidade}) 
+
+} 
+
+1 referencia  
+
+Public void RetornoConsole(); //fara o retorno para a tela  
+
+{ 
+
+Console.WriteLine(Retorno()); 
+
+} 
+
+} 
+
+Na tela main vamos fazer a chamada do metodo retorno console 
+
+Class Program{ 
+
+Staic void Main(string[] args)) 
+
+{ 
+
+Produto produto1 = new Produto(); 
+
+produto1.nome = “Nome01”; 
+
+Produto1.codigo = 1; 
+
+Produto1.sabor = “limão”; 
+
+Produto1.qtd = 6 ; 
+
+Produto1.RetornoConsole(); 
+
+} } 
+
 O que é fazer um Binding? 
 Resp: Fazer um Binding é fazer um link com da informação que eu quero ver  da minha VM para a minha view. 
 Em suas palavras, explique o Padrão de Projeto Observer.
